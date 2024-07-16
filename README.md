@@ -19,7 +19,7 @@ The following Entity-Relationship Diagram (ERD) shows the relationships between 
 classDiagram
     class User {
         uuid id
-        string username
+        string name
         string email
         string password
         datetime created_at
