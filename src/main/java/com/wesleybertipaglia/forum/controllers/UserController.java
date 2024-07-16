@@ -22,12 +22,12 @@ public class UserController {
     private UserService userService;
 
     @PostMapping
-    public ResponseEntity<UserResponseDTO> save(@RequestBody UserRequestDTO user) {
+    public ResponseEntity<UserResponseDTO> create(@RequestBody UserRequestDTO user) {
         return ResponseEntity.of(userService.create(user));
     }
 
     @GetMapping
-    public ResponseEntity<Page<UserResponseDTO>> listBanks(
+    public ResponseEntity<Page<UserResponseDTO>> list(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "10") int size) {
         return ResponseEntity.ok(userService.list(page, size));
