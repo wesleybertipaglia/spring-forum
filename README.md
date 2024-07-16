@@ -18,35 +18,38 @@ The following Entity-Relationship Diagram (ERD) shows the relationships between 
 ```mermaid
 classDiagram
     class User {
-        int user_id
+        int id
         string username
         string email
         string password
         datetime created_at
+        datetime updated_at
     }
     
     class Post {
-        int post_id
+        int id
         int user_id
         string title
         string content
         datetime created_at
+        datetime updated_at
     }
     
     class Comment {
-        int comment_id
+        int id
         int post_id
         int user_id
         string content
         datetime created_at
+        datetime updated_at
     }
     
     class Vote {
-        int vote_id
+        int id
         int user_id
         int post_id
-        string vote_type
         datetime created_at
+        datetime updated_at
     }
 
     User "1" *-- "N" Post : creates
