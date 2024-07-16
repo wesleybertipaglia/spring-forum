@@ -2,5 +2,5 @@ package com.wesleybertipaglia.forum.records;
 
 import java.util.UUID;
 
-public record CommentResponseDTO(UUID id, UUID user_id, UUID post_id, String content) {
+public record CommentResponseDTO(UUID id, UUID authorId, UUID postId, String content) {
 }
