@@ -18,7 +18,7 @@ The following Entity-Relationship Diagram (ERD) shows the relationships between 
 ```mermaid
 classDiagram
     class User {
-        int id
+        UUID id
         string username
         string email
         string password
@@ -27,8 +27,8 @@ classDiagram
     }
     
     class Post {
-        int id
-        int user_id
+        UUID id
+        UUID user_id
         string title
         string content
         datetime created_at
@@ -36,18 +36,18 @@ classDiagram
     }
     
     class Comment {
-        int id
-        int post_id
-        int user_id
+        UUID id
+        UUID post_id
+        UUID user_id
         string content
         datetime created_at
         datetime updated_at
     }
     
     class Vote {
-        int id
-        int user_id
-        int post_id
+        UUID id
+        UUID user_id
+        UUID post_id
         datetime created_at
         datetime updated_at
     }
