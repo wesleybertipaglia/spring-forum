@@ -10,13 +10,17 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.wesleybertipaglia.forum.records.CommentRequestDTO;
 import com.wesleybertipaglia.forum.records.CommentResponseDTO;
 import com.wesleybertipaglia.forum.services.CommentService;
 
 import java.util.UUID;
+import org.springframework.web.bind.annotation.RequestMapping;
 
+@RestController
+@RequestMapping("/comments")
 public class CommentController {
     @Autowired
     private CommentService commentService;
