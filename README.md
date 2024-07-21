@@ -20,15 +20,22 @@ The easiest way to run the application is with Docker.
 docker-compose up -d
 ```
 
-The application will be available at [http://localhost:8080](http://localhost:8080).
+> The application will be available at [http://localhost:8080](http://localhost:8080).
 
 ### Running with Gradle
 
-Alternatively, you can run the application with Gradle.
+Alternatively, you can run the application with Gradle. 
+
+#### Prerequisites
+
+- Java 22 or later (it's compatible with Java 17, but you may need to update the `sourceCompatibility` and `targetCompatibility` in the `build.gradle` file)
+- Gradle 8.0 or later
 
 ```bash
 ./gradlew bootRun
 ```
+
+> The application will be available at [http://localhost:8080](http://localhost:8080).
 
 ## Features
 
