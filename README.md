@@ -2,6 +2,34 @@
 
 This project is a simple forum application built with Spring Boot. It allows users to create posts, comment on posts, and vote on posts.
 
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [ERD Diagram](#erd-diagram)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Getting Started
+
+### Running with Docker
+
+The easiest way to run the application is with Docker.
+
+```bash
+docker-compose up -d
+```
+
+The application will be available at [http://localhost:8080](http://localhost:8080).
+
+### Running with Gradle
+
+Alternatively, you can run the application with Gradle.
+
+```bash
+./gradlew bootRun
+```
+
 ## Features
 
 The application includes the following functionalities:
